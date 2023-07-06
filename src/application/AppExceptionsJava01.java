@@ -25,7 +25,6 @@ public class AppExceptionsJava01 {
 
 			if (op == 1) { // Looking for contact
 				consultarContato(scString, schedule);
-
 			}
 
 			else if (op == 2) { // Add contact
@@ -35,7 +34,6 @@ public class AppExceptionsJava01 {
 
 		sc.close();
 		scString.close();
-
 	}
 
 	public static void adicionarContato(Scanner scString, Agenda schedule) {
@@ -57,8 +55,7 @@ public class AppExceptionsJava01 {
 			System.out.println(contact + "\n");
 
 			schedule.adicionarContato(contact);
-		}
-		catch (AgendaCheiaException e) {
+		} catch (AgendaCheiaException e) {
 			System.out.println(e.getMessage());
 
 			System.out.println("Schedule contacts: ");
@@ -110,7 +107,6 @@ public class AppExceptionsJava01 {
 				}
 
 			}
-
 			catch (Exception e) {
 				System.out.println("Invalid value, type again." + "\n");
 			}
